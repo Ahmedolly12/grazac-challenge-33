@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFF;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    padding-top:1em;
+    
+}
+.select-left, .profile-right{
+    display:flex;
+    padding-left: 3em;
+    padding-right: 3em;
+   
+}.profile-right{
+    position: relative;
+}
+select{
+    border:none;
+}
+.profile-right p, .profile-right img{
+    cursor: pointer;
+}
+ .search{
+    color:grey;
+ }
+ img.search{
+    padding-left: 10px;
+ }
+ p.top{
+   position:relative;
+   right:50px;
+   top:10px;
+
+ }
+ img.cart{
+    position:relative;
+    right:100px;
+ }
+ p.profile{
+    position: relative;
+    right:100px;
+    top:10px;
+ }
+ input {
+	outline: none;
+}
+input[type=search] {
+	-webkit-appearance: textfield;
+	 
+	font-family: inherit;
+	font-size: 100%;
+}
+ 
+ input[type=search] {
+	background: #fff url(http://webdesignerwall.com/demo/expandable-search-form/images/search-icon.png) no-repeat 9px center;
+	border: none;
+	padding: 9px 10px 9px 32px;
+	width: 0px;
+	 
+}
+input[type=search]:focus {
+	width: 130px;
+	background-color: #fff;
+	border-color: #6dcff6;
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+.fa-solid{
+    color:black;
+}
+ @media screen and (max-width: 768px){
+    .header-container{
+     display:none;
+    }
+ }

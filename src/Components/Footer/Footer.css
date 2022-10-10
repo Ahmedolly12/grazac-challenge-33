@@ -1,0 +1,109 @@
+ /* ...............Desktop View....................... */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+.footer-container{
+    background:#BCDDFE;
+    font-family: 'Roboto', sans-serif;
+    margin-top:5em;
+}
+.footer-content, .footer-info{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding:2em;
+}
+.ecomm,.followus, .contactus{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+.icon{
+    cursor:pointer;
+}
+.ecomm p, .followus p, .contactus p{
+    width:70%;
+    line-height: 40px;
+}
+p.heading{
+    font-size: 18px;
+    font-weight: 500;
+}
+.social{
+    cursor:pointer;
+}
+img.twitter{
+   padding-left: 2em;
+    
+}
+p.headings{
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+p.sub-text{
+    font-weight: 100;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+a:hover{
+    color: grey;
+}
+li {
+    list-style: none;
+    padding:5px;
+}
+hr{
+    width: 90%;
+    border: 1px solid white;
+}
+.card-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+}
+.card-details p{
+    color:#C1C8CE;
+}
+.cardd{
+    display: flex;
+    gap: 1em;
+    justify-content: space-evenly;
+    cursor: pointer;
+
+}
+img.vis{
+    position:absolute;
+    right: 40px;
+    bottom: 2.5em;
+}
+p.www{
+    font-weight:100;
+}
+/*............................. Mobile View......................... */
+@media screen and (max-width: 768px) {
+body{
+    overflow-x: hidden;
+}
+ 
+.footer-info{
+    flex-direction: column;
+}
+.footer-content{
+    flex-direction: column;
+}
+.card-details{
+    display: block;
+}
+h6{
+top: 50px;
+
+}
+.ecomm p, .followus p, .contactus p{
+    width:auto;
+    line-height: 40px;
+}
+}

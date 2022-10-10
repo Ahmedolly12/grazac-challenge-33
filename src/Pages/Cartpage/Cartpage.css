@@ -1,0 +1,111 @@
+table tr th{
+    padding:4em;
+    padding-bottom:0;
+    font-size:20px;
+    border-bottom: 2px solid #F6F7F8;
+    text-align:center;
+}
+table {
+    margin-left:5em;
+    margin-right:5em;
+}
+td{
+    padding:4em;
+    border-bottom: 2px solid #F6F7F8;
+}
+.input-group{
+    display: flex;
+    justify-content: space-between;
+   background:#F6F7F8;
+    width: 125px;
+    border:none;
+}
+td.text{
+    font-size: 20px;
+    color:#262626;
+    
+   
+}
+td.text1  {
+display: flex;
+gap:10px;
+}
+td.text1 p{
+    font-weight: 500;
+    font-size: 15px;
+    padding-top:20px;
+}
+.input{
+    padding:5em;
+    padding-left:5em;
+}
+input{
+    padding:20px;
+    color:#262626;
+    border:2px solid #F1F3F4;
+    border-top-left-radius:5px;
+    border-bottom-left-radius: 5px;
+}
+input.redeem{
+    background:#33A0FF;
+    color:white;
+    font-size:18px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius:5px;
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;
+    border:none;
+}
+.checkout{
+    display:flex;
+    justify-content: space-between;
+}
+td.out{
+  padding: 1em;
+    padding-left: 10em;
+    font-size:18px;
+    border-bottom: none;
+}
+tr td.underline{
+    border-bottom: 2px solid #F6F7F8;;
+}
+ tr td.bold h3{
+    margin-left:4em;
+}
+.tablecheckout{
+    position: relative;
+}
+button.checkout{
+    background:#33A0FF;
+    color:white;
+    padding-left:12em;
+     padding-right:12em;
+     padding-top:1em;
+    padding-bottom:1em;
+    border:none;
+    border-radius: 5px;
+    font-weight:600;
+   position: absolute;
+    bottom: 1px;
+   right: 100px;
+   
+}
+
+ @media screen and (max-width: 768px){
+    table th{
+    display: none;
+  }
+  table td {
+    display: flex;
+  }
+  
+  table td::before {
+    content: attr(label);
+    font-weight: bold;
+    width: 120px;
+    min-width: 120px;
+  }
+}
+ 
+ 
+

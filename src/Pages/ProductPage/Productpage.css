@@ -1,0 +1,240 @@
+ .productpage-container{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+ .product-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.product-desc p{
+    font-size: 25px;
+    color:#22262A;
+    font-weight: 500;
+}
+.review {
+    display:inline-flex;
+   gap: 2em;
+}
+.star{
+    display:inline-flex;
+    /* justify-content: space-between; */
+    width:fit-content;
+    height: fit-content;
+    
+}
+.submitted{
+    display: flex;
+    justify-content: space-around;
+    width: fit-content;
+    gap: 10px;
+    height: fit-content;
+    width:fit-content;
+    margin-top: -15px;
+   
+}
+p.review{
+    font-size: 12px;
+    color:#C1C8CE;
+}
+p.submit{
+    color: #33A0FF;
+    font-size: 12px;
+    cursor: pointer;
+}
+hr.thin, small hr.thin{
+border: 2px solid #F6F7F8;;
+width: 120%;
+}
+p.dollars{
+    color:#40BFFF;
+}
+small{
+    color:#9098B1;
+    font-size:15px;
+    text-decoration:line-through;
+}
+small.off{
+    font-size:15px;
+    color:#FB7181;
+    text-decoration:none;
+    font-weight:700;
+}
+small.object{
+    text-decoration:none;
+    font-size: 18px;
+    color:#262626;
+    line-height:45px;
+}
+input[type=radio]#blue {
+    accent-color:#006CFF;
+}
+input[type=radio]#red {
+    accent-color:#FC3E39;
+}
+input[type=radio]#black {
+    accent-color:#000;
+}
+input[type=radio]#yellow {
+    accent-color:#FFF600;
+}
+select.size{
+    border:1px solid #C1C8CE;
+   width:50%;
+   padding:5px;
+    margin-left:3em;
+}
+select.size{
+    border:1px solid #C1C8CE;
+   width:50%;
+   padding:5px;
+    margin-left:3em;
+}
+.input-group{
+    display: flex;
+    justify-content: space-between;
+   background:#F6F7F8;
+    width: 125px;
+    border:none;
+}
+.input-group-text{
+    width:40px;
+    background:#F6F7F8;
+    border:none;
+    color: #33A0FF;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+.cart{
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+    padding-top:10px;
+}
+.text-center{
+    text-align: center;
+    padding:15px;
+   background:#F6F7F8;
+   border:1px solid #F6F7F8;
+}
+.tab-container{
+    padding:4em;
+    background-color: #FAFAFB;
+    margin-top:2em;
+    width:80%;
+} 
+
+small.to{
+    color:black;
+    text-decoration:none;
+    background-color:rgb(51,160,255, 0.1);
+    padding-left:10px;
+     padding-right:10px;
+    text-align:center;
+    border-radius:5px;
+    cursor:pointer;
+}
+small.love{
+background-color:rgb(51,160,255, 0.1);
+padding-left: 10px;
+padding-right:10px;
+cursor:pointer;
+ border-radius:5px;
+}
+.cart2{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    padding-top:10px;
+}
+.social-media{
+    display:flex;
+    /* justify-content: space-around; */
+    gap: 1em;
+    margin-top:10px;
+}
+button.facebook{
+    padding-left:30px;
+    padding-right:30px;
+    padding:10px;
+    background:#385C8E;
+    color:white;
+    border-radius:3px;
+    border:none;
+    font-size:15px;
+    cursor:pointer;
+}
+button.twitter{
+    background:#03A9F4;
+    padding-left:20px;
+    padding-right:20px;
+    color:white;
+    border-radius:3px;
+    border:none;
+    
+    font-size:15px;
+    cursor:pointer;
+}
+.related-container{
+display: flex;
+justify-content:space-around;
+align-items: center;
+padding-bottom: 2em;
+}
+button.hot{
+    color:white;
+    background-color:#FF4858;
+    border:none;
+    border-radius:2px;
+    position:absolute;
+    left:50px;
+    top:100px;
+}
+.related h2{
+    text-align:center;
+    font-size:30px;
+}
+.related{
+    position:relative;
+}
+.flex-row{
+    display: flex;
+    justify-content: center;
+    padding-top: 8em;
+    gap:1em;
+}
+ .clicked{
+    border: 2px solid#006CFF;
+ }
+@media screen and (max-width: 768px){
+    html, body{
+        overflow-x: hidden;
+    }
+    .productpage-container, .related-container{
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        padding:1em;
+    }
+    .nike{
+        padding-left:1em;
+    }
+    .product-desc{
+        justify-content: center;
+        align-items: center;
+        /* padding:10px; */
+    }
+    .tab-container{
+        display:none;
+    }
+    .flex-row{
+        gap:0;
+    }
+    button.hot{
+    position:absolute;
+    left:200px;
+    top:70px;
+}
+}

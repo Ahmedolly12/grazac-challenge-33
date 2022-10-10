@@ -1,0 +1,15 @@
+p.tabcontent{
+    font-weight: 100;
+    width:60%;
+    text-align:left;
+    color: #9098B1;
+}
+ul.mb-3{
+    width:70%;
+}
+button#controlled-tab-example-tab-home{
+    color:#2E90E5;
+    border-bottom: 2px solid #2E90E5;
+    padding-bottom: 1em;
+}
+ 

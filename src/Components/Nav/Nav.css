@@ -1,0 +1,103 @@
+
+/* ...............Desktop Screen............... */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap');
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-left:5em;
+    padding-right:5em;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5em;
+    width: 100%;
+    font-weight: 500;
+}
+li.links a{
+    font-size: 18px;
+}
+li{
+    list-style-type: none;
+}
+li a{
+    text-decoration: none;
+}
+li.ham a{
+    font-size: 30px;
+    display: none;
+}
+span{
+    color: #40BFFF;
+}
+.logo{
+    display:flex;
+}
+.logo h3{
+    font-size:20px;
+    font-weight:700;
+}
+
+#menu-btn, .none, ul.myNav{
+    display:none;
+}
+.nike-container{
+    background:#F6F7F8;
+    opacity:0.5;
+    /* padding:5px; */
+}
+.nike-container p{
+    text-align: center;
+    font-size:20px;
+}
+
+/* .....................Mobile Screen............ */
+@media screen and (max-width: 768px){
+    
+    li.links a{
+        display: none;
+    }
+    ul{
+        margin: 0;
+    }
+    li.ham a{
+    font-size: 30px;
+    display: block;
+}
+.nav-container{
+    padding:1em;
+}
+ 
+#menu-btn{
+    display: block;
+    margin-right:2em;
+}
+ul.myNav {
+  display: block;
+   position: absolute;
+  list-style: none;
+  right:0em;
+  top: 4em;
+background:#BCDDFE;
+text-align: center;
+  width:  300px;
+  height:70vh;
+  color: black;
+  transition: .5s;
+   display:flex;
+  flex-direction: column;
+  justify-content: space-evenly; 
+    z-index: 1;
+
+}
+.logo h3{
+    font-size:15px;
+    font-weight:700;
+}
+.nike-container{
+    display: none;
+}
+}
