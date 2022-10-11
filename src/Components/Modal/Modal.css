@@ -1,0 +1,56 @@
+.btun{
+    background:none;
+    border:none;
+}
+.step{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p.pay{
+    font-size: 30px;
+    color:#40BFFF;
+}
+ .nam, .mthd{
+    display: flex;
+    justify-content: space-around;
+ }
+ input.modname{
+    background:#DFDEDE;
+    color:black;
+    opacity:0.5
+ }
+ p.slct{
+    color:#40BFFF;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+ }
+ .mthd p{
+    text-align: center;
+ }
+ /* .mthd{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+ } */
+.purp{
+    font-size:15px;
+    color:#223263;
+}
+.thh{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: flex-end;
+}
+button.goto{
+  padding: 1em;
+  background:#40BFFF;
+  border:none;
+}
+
+.payee{
+    display:flex;
+    justify-content:space-around
+}

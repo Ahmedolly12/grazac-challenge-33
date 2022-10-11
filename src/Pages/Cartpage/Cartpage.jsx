@@ -1,6 +1,6 @@
 import React, { useState} from 'react'
 import "./Cartpage.css"
-// import Modal from '../../Component/Modal/Modal'
+import Modal from '../../Components/Modal/Modal'
 import x from '../../images/x.png'
 import tablenike from "../../images/tablenike.png"
 import tablenike2 from "../../images/tablenike2.png"
@@ -101,7 +101,7 @@ const Cartpage = () => {
                             <td className='bold'><h3>$1018</h3></td>
                         </tr>
                         
-                            <button className='checkout'>Checkout</button>
+                            <button className='checkout'><Modal/></button>
                     </table>
                      
                 </div>

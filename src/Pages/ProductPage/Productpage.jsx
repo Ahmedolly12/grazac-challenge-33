@@ -21,7 +21,7 @@ import rate from "../../images/rate.png"
 import wallet from "../../images/wallet.png"
 import wallet2 from "../../images/wallet2.png"
 import bluenike from "../../images/bluenike.png"
-import SCarousel from "../../Components/Carousel/SCarousel"
+// import SCarousel from "../../Components/Carousel/SCarousel"
 
 
 
@@ -217,7 +217,7 @@ const imgs=[
 
     
         </div>
-        <div className="tab-container">
+        <div className="tabb-container">
         <Carousel/>
       </div>
       
