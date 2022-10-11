@@ -2,6 +2,7 @@
 import React from 'react';
 import Cards from 'react-credit-cards';
 import 'react-credit-cards/es/styles-compiled.css';
+import "./Creditcard.css"
 
 export default class PaymentForm extends React.Component {
   state = {
@@ -32,36 +33,39 @@ export default class PaymentForm extends React.Component {
           name={this.state.name}
           number={this.state.number}
         />
-        <form>
-        	<input
+        <form className='Creditform'>
+        	<input className='atm'
             type="tel"
             name="number"
             placeholder="Card Number"
             onChange={this.handleInputChange}
             onFocus={this.handleInputFocus}
           />
-            <input
+          <div className="cvv">
+                <input className='atm'
+                    type="tel"
+                    name="expiry"
+                    placeholder="Expiry"
+                    onKeyUp={this.handleInputChange}
+                    onFocus={this.handleInputFocus}
+                />
+                <input className='atm'
+                    type="tel"
+                    name="cvc"
+                    placeholder="CVV"
+                    onKeyUp={this.handleInputChange}
+                    onFocus={this.handleInputFocus}
+                />
+            </div>
+            <input className='atm'
                 type="text"
                 name="name"
-                placeholder="Name"
-                onKeyUp={this.handleInputChange}
-                onFocus={this.handleInputFocus}
-              
-            />
-            <input
-                type="tel"
-                name="expiry"
-                placeholder="Valid Thru"
+                placeholder="Holder Name"
                 onKeyUp={this.handleInputChange}
                 onFocus={this.handleInputFocus}
             />
-            <input
-                type="tel"
-                name="cvc"
-                placeholder="CVC"
-                onKeyUp={this.handleInputChange}
-                onFocus={this.handleInputFocus}
-            />
+             <p className='sav'><input type='checkbox'/>  Save this credit card</p>
+            
         </form>
       </div>
     );

@@ -5,7 +5,7 @@
  import ProductPage from "./Pages/ProductPage/Productpage"
  import CartPage from "./Pages/Cartpage/Cartpage"
  import Contactpage from "./Pages/Contactpage/Contact"
- import Creditcard from "./Components/Creditcards/Creditcard"
+//  import Creditcard from "./Components/Creditcards/Creditcard"
  import { Route, Routes } from 'react-router-dom';
  const App = () => {
    return (
@@ -16,7 +16,6 @@
       <ProductPage/>
       <CartPage/>
       <Contactpage/>
-      <Creditcard/>
       {/* </Routes> */}
       
       <Footer/>

@@ -1,0 +1,18 @@
+
+ .Creditform{
+    display: flex;
+    flex-direction: column;
+ }
+ input.atm{
+    width: 70%;
+    background:#DFDEDE;
+    opacity: 0.5;
+ }
+ .cvv{
+    display: flex;
+    justify-content: space-around;
+    width:70%;
+ }
+ p.sav{
+    color:#999999;
+ }

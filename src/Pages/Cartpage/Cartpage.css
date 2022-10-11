@@ -61,10 +61,11 @@ input.redeem{
     justify-content: space-between;
 }
 td.out{
-  padding: 1em;
+    padding: 1em;
     padding-left: 10em;
     font-size:18px;
     border-bottom: none;
+   
 }
 tr td.underline{
     border-bottom: 2px solid #F6F7F8;;
@@ -85,11 +86,12 @@ button.checkout{
     border:none;
     border-radius: 5px;
     font-weight:600;
-   position: absolute;
+    position: absolute;
     bottom: 1px;
    right: 100px;
    
 }
+ 
 
  @media screen and (max-width: 768px){
     table th{

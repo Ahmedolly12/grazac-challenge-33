@@ -18,7 +18,7 @@ import PaymentModal from '../../Components/PaymentModal/PaymentModal'
    return (
      <div>
         <Button className='btun'variant="primary" onClick={handleShow}>
-        Checkout
+           Check out
       </Button>
 
       <Modal show={show} onHide={handleClose} animation={false}>

@@ -1,0 +1,19 @@
+.sucess h6{
+    color:#223263;
+    font-size:40px;
+}
+button.goto{
+  padding: 1em;
+  background:#33A0FF;
+  border:none;
+  font-size: 20px;
+    font-weight: 500;
+  
+}
+.sucess{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
