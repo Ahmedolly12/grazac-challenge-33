@@ -18,11 +18,11 @@ function App() {
           <div className='App'>
             <Header/>
             <Nav/>
-            <Routes>
+            {/* <Routes> */}
               <ProductPage/>
               <CartPage/>
               <Contactpage/>
-            </Routes>
+            {/* </Routes> */}
             <Footer/>
           </div>      
         </BrowserRouter>
