@@ -21,7 +21,7 @@ import rate from "../../images/rate.png"
 import wallet from "../../images/wallet.png"
 import wallet2 from "../../images/wallet2.png"
 import bluenike from "../../images/bluenike.png"
-// import SCarousel from "../../Components/Carousel/SCarousel"
+import Homenavs from '../../Components/Homenav/Homenav';
 
 
 
@@ -83,6 +83,7 @@ const imgs=[
   ])
    return (
      <div>
+      <Homenavs/>
        <div className="productpage-container">
           <div className="nike">
             <img src={sliderData.value} height="300" width="300" alt=""/>

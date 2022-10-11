@@ -3,11 +3,15 @@
     align-items: center;
     justify-content: space-around;
     padding:1em;
+    margin-bottom: 2em;
+    border:1px solid #E5E5E5;
+     
 }
 .contact{
     background: #40BFFF;
     display: flex;
     width:900px;
+   
 }
 .contact-text{
     display: flex;
@@ -18,7 +22,8 @@
 }
 .contact-text h5{
     font-size: 50px;
-    width:50%;
+    width:60%;
+    padding-top:2em;
 }
 .contact-add{
     margin-right:2em;
@@ -26,28 +31,22 @@
     font-size: 25px;
 }
 form{
-    /* padding:5em; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     font-size:20px;
+    max-width: 100%;
 }
-input.doe {
-    width:90%;
-    padding: 2em;
-}
-input, textarea[type=email]{
-    margin-top:2em;
-}
-textarea{
-    padding:2em;
-    width:500px;
-    height:200px;
-}
+ 
 .serach-container{
     display:flex;
     justify-content: center;
     align-items: center;
     /* width:100%; */
 }
-
+.contact-add{
+    margin-bottom: 2em;
+}
 input.long{
 width: 50%;
 border: 1px solid #BCDDFE;
@@ -62,6 +61,48 @@ input.srch{
     border-top-left-radius:0;
     border-bottom-left-radius:0;
 
+}
+.namme{
+    display: flex;
+    flex-direction: column;
+}
+input.snd{
+     background: #40BFFF;
+    color:white;
+    font-weight:500;
+     border-radius:5px;
+}
+@media screen and (max-width: 768px){
+    .contact-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    form{
+    margin-top:1em;
+    
+    
+}
+.contact{
+    width: 300px;
+    flex-direction: column;
+}
+.contact img{
+    display:none;
+}
+.contact-text{
+    flex-direction: column;
+}
+.contact-text h5{
+    width:100%;
+    text-align: center;
+    padding-top:5px;
+    font-size:30px;
+}
+.contact-add{
+    text-align: center;
+    font-size:18px;
+}
 }
 
  

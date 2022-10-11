@@ -4,6 +4,7 @@ import Modal from '../../Components/Modal/Modal'
 import x from '../../images/x.png'
 import tablenike from "../../images/tablenike.png"
 import tablenike2 from "../../images/tablenike2.png"
+import table from "../../images/table.PNG"
 
 const Cartpage = () => {
     const [quantity, setQuantity]= useState(1);
@@ -44,7 +45,7 @@ const Cartpage = () => {
                 <th>UNIT PRICE</th>
             </tr>
             <tr>
-                <td><img src={x} alt=''/></td>
+                <td><img className='x'src={x} alt=''/></td>
                 <td className="text text1">
                     <img src={tablenike}alt=''/>
                     <p className='airmax'>Nike Airmax 270 react </p>
@@ -60,7 +61,7 @@ const Cartpage = () => {
                 <td className="text">$499</td>
             </tr>
             <tr>
-                <td><img src={x} alt=''/></td>
+                <td><img className='x' src={x} alt=''/></td>
                  <td className="text text1">
                     <img src={tablenike2}alt=''/>
                     <p className='airmax'>Nike Airmax 270 react </p>
@@ -75,39 +76,39 @@ const Cartpage = () => {
                  </td>
                  <td className="text">$499</td>
             </tr>
+            
         </table>
+        <div className="tableimage">
+            <img src={table}/>
+          </div>
         <div className="checkout">
-                <div className="input">
-                    <input type="text" placeholder='Voucher Code'/>
-                    <input className='redeem'type ='submit' value='Redeem'/>
+          <div className="vouch">
+              <input type="text" placeholder='Voucher Code'/>
+              <input className='redeem'type ='submit' value='Redeem'/>
+          </div>
+              
+          <div className="para-table">
+                <div className="cont">
+                  <p> Subtotal</p>
+                  <p>$998</p>
                 </div>
-                <div className="tablecheckout">
-                    <table className='check'>
-                        <tr>
-                            <td className='out'>Subtotal</td>
-                            <td className='out'>$998</td>
-                        </tr>
-                        <tr>
-                            <td className='out'>Shipping fee</td>
-                            <td className='out'>$20</td>
-                        </tr>
-                        <tr>
-                            <td className='out underline'>Coupon</td>
-                            <td className='out underline' >No</td>
-                            
-                        </tr>
-                        <tr>
-                            <td className='bold'><h3>TOTAL</h3></td>
-                            <td className='bold'><h3>$1018</h3></td>
-                        </tr>
-                        
-                            <button className='checkout'><Modal/></button>
-                    </table>
-                     
+                <div className="cont">
+                  <p> Shipping</p>
+                  <p>$20</p>
                 </div>
+                <div className="cont">
+                  <p> Coupon</p>
+                  <p>No</p>
+                </div>
+                <div className="cont">
+                  <p  className='biggy'> Total</p>
+                  <p className='biggy'>$ 1018</p>
+                </div>
+              <button className='medbtn'><Modal/></button>
+              </div>
+           
         </div>
-        
-        
+      
     </div>
   )
 }

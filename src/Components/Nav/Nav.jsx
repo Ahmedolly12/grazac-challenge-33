@@ -35,9 +35,6 @@ const Nav = () => {
                 </ul>
             </div>
         </div>
-        <div className="nike-container">
-            <p><span>Home</span> / <span>Hotdeal</span> / Nike Airmax 270 React</p>
-        </div>
     </div>
   )
 }
