@@ -79,12 +79,12 @@ ul.myNav {
   display: block;
    position: absolute;
   list-style: none;
-  right:0em;
+  right:2em;
   top: 4em;
 background:#BCDDFE;
 text-align: center;
   width:  300px;
-  height:70vh;
+  height:100vh;
   color: black;
   transition: .5s;
    display:flex;
