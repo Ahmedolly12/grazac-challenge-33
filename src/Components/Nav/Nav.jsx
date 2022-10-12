@@ -15,7 +15,7 @@ const Nav = () => {
             <h3>E-Comm </h3></div>
             <div className="product">
                 <ul>
-                    <li className="links"><a href=""><span>HOME</span></a></li>
+                    <li className="links"><a href="/"><span>HOME</span></a></li>
                     <li className="links"><a href="">BAGS</a></li>
                     <li className="links"><a href="">SNEAKERS</a></li>
                     <li className="links"><a href="">BELT</a></li>
@@ -26,7 +26,7 @@ const Nav = () => {
                 </ul>
                 
                 <ul className={toggle ? "myNav" : "none"}>
-                    <li><a href="./">HOME</a></li>
+                    <li><a href="/">HOME</a></li>
                     <li><a href="./">BAGS</a></li>
                     <li><a href="./">SNEAKERS</a></li>
                     <li><a href="./">BELT</a></li>
