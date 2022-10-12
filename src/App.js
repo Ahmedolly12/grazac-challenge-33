@@ -18,11 +18,12 @@ function App() {
           <div className='App'>
             <Header/>
             <Nav/>
-            {/* <Routes> */}
-              <ProductPage/>
-              <CartPage/>
-              <Contactpage/>
-            {/* </Routes> */}
+            <Routes>
+              <Route path ='/' element ={<ProductPage/>}/>
+              <Route path= '/contactpage' element ={ <Contactpage/>}/>
+              <Route path= '/cartpage' element ={<CartPage/>}/>
+            </Routes>
+             
             <Footer/>
           </div>      
         </BrowserRouter>
@@ -30,4 +31,7 @@ function App() {
 }
 
 export default App;
+{/* <Route path ='/' element = {<Home/>}/> */}
+      //  <Route path ='ContactUs' element ={<ContactUs/>}/>
+      //  <Route path ='AboutUs' element ={<AboutUs/>}/>
  

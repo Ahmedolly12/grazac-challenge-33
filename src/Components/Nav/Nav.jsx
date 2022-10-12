@@ -19,7 +19,7 @@ const Nav = () => {
                     <li className="links"><a href="">BAGS</a></li>
                     <li className="links"><a href="">SNEAKERS</a></li>
                     <li className="links"><a href="">BELT</a></li>
-                    <li className="links"><a href="">CONTACT</a></li>
+                    <li className="links"><a href="http://localhost:3000/contactpage">CONTACT</a></li>
                     <div id="menu-btn" onClick={handleMe}>
                         { toggle ? <img class="close" src={close}/> :<img src={menu} id="menu" />}
                     </div>
@@ -31,7 +31,7 @@ const Nav = () => {
                     <li><a href="./">SNEAKERS</a></li>
                     <li><a href="./">BELT</a></li>
                     <li><a href="">CONTACT</a></li>
-                    <li><a href="">CART</a></li>
+                    <li><a href="http://localhost:3000/cartpage">CART</a></li>
                 </ul>
             </div>
         </div>

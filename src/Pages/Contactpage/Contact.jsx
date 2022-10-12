@@ -2,6 +2,7 @@ import React from 'react'
 import './Contact.css';
 import phone from '../../images/phone.png'
 import Contactnav from '../../Components/Contactnav/Contactnav';
+ import {Link} from 'react-router-dom'
  
 
 

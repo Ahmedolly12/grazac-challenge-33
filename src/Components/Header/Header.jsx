@@ -23,7 +23,7 @@ const Header = () => {
             </div>
             <div className="profile-right">
                 <p className='profile'><img src={profile}alt=""/>My Profile</p>
-                <img className='cart' src={cart11}alt=""/>
+             <a href="http://localhost:3000/cartpage"><img className='cart' src={cart11}alt=""/></a>
                 <p className='top'>Items</p>
                 <p className="search">$0.00<input type='search'/></p>
             </div>
