@@ -4,6 +4,7 @@ import logo from "../../images/logo.png";
 import close from "../../images/close.PNG";
 import menu from "../../images/menu.PNG";
 import { useState } from 'react';
+import {Link} from 'react-router-dom';
 
 const Nav = () => {
     const [toggle, setToggle] = useState(false);
@@ -19,7 +20,7 @@ const Nav = () => {
                     <li className="links"><a href="">BAGS</a></li>
                     <li className="links"><a href="">SNEAKERS</a></li>
                     <li className="links"><a href="">BELT</a></li>
-                    <li className="links"><a href="http://localhost:3000/contactpage">CONTACT</a></li>
+                    <li className="links"><Link to="/contactpage">CONTACT</Link></li>
                     <div id="menu-btn" onClick={handleMe}>
                         { toggle ? <img class="close" src={close}/> :<img src={menu} id="menu" />}
                     </div>
@@ -30,8 +31,8 @@ const Nav = () => {
                     <li><a href="./">BAGS</a></li>
                     <li><a href="./">SNEAKERS</a></li>
                     <li><a href="./">BELT</a></li>
-                    <li><a href="">CONTACT</a></li>
-                    <li><a href="http://localhost:3000/cartpage">CART</a></li>
+                    <li><Link to="/contactpage">CONTACT</Link></li>
+                    <li><Link to="/cartpage">CART</Link></li>
                 </ul>
             </div>
         </div>

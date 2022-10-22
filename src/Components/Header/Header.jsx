@@ -2,6 +2,7 @@ import React from 'react'
 import "./Header.css"
 import profile from "../../images/profile.png";
 import cart11 from "../../images/cart11.png";
+import {Link} from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -23,7 +24,7 @@ const Header = () => {
             </div>
             <div className="profile-right">
                 <p className='profile'><img src={profile}alt=""/>My Profile</p>
-             <a href="http://localhost:3000/cartpage"><img className='cart' src={cart11}alt=""/></a>
+                <Link to="/cartpage"><img className='cart' src={cart11}alt=""/></Link>
                 <p className='top'>Items</p>
                 <p className="search">$0.00<input type='search'/></p>
             </div>
